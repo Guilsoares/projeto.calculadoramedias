@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de médias</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <header>
+        <img src="images/logo.png" alt="capelo e diploma">
+        <h1>Calculadora de médias</h1>
+    </header>
+    <form id="formAtividade">
+        <input type="text" required placeholder="Nome da Atividade" name="Nome_da_atividade" id="nomeAtividade">
+        <input type="number" required placeholder="Nota" name="Nota" id="notaAtividade" min="0" max="10">
+        <button type="submit">Adicionar+</button>
+    </form>
+    <table cellspacing="0"> <!-- Chama uma tabela! -->
+        <thead> <!--Cria o cabeçalho de uma tabela-->
+            <tr> <!--Cria a Linha de uma tabela-->
+                <th>Nome da Atividade</th> <!-- Cria as coluas de uma tabela (Apenas para o cabeçalho (TH)ead ) -->
+                <th>Nota da Atividade</th>
+                <th>Aprovado?</th>
+            </tr>
+        </thead>
+        <tbody> <!-- Cria o conteudo da tabela-->
+            <!--<tr>
+                <td>Atividade 1</td>  Cria as colunas para os conteúdos da tabela
+                <td>7</td>
+                <td><img src="images/aprovado.png" alt="EmojiFeliz"></td>
+            </tr> -->
+        </tbody>
+        <tfoot> <!-- Cria o rodapé da tabela -->
+            <tr>
+                <td>Média Final</td>
+                <td id="media-final-valor">---</td>
+                <td id="media-final-resultado">---</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <script src="script.js"></script>
+
+</div>    
+</body>
+</html>

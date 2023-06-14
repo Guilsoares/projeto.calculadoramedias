@@ -1,0 +1,108 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+:root{
+    --fontePadrao: 'Roboto', sans-serif;
+    --cordeFundo: #e7e7e7;
+    --corBotao: #009432;
+    --textBotao: #fff;
+    --underLinecolor: rgba(0,0,0,0.1);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--fontePadrao);
+}
+
+body{
+    background-color: var(--cordeFundo) ;
+    padding-top: 100px;
+
+}
+
+header{
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+
+}
+
+header img{
+    height: 36px;
+    margin-right: 16px;
+}
+
+header h1{
+    font: bold 40px var(--fontePadrao);
+}
+
+.container{
+    max-width: 980px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+form{
+    display: flex;
+    max-width: 640px;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 56px;
+}
+
+form input{
+    font-size: 24px;
+    background-color: var(--textBotao);
+    border: none;
+    border-bottom: 2px solid black;
+    padding: 8px;
+}
+
+form button{
+    background-color: var(--corBotao);
+    color: var(--textBotao);
+    font: bold 24px var(--fontePadrao);
+    cursor: pointer;
+    border: none;
+    padding: 8px;
+}
+
+table{
+    width: 100%;
+}
+
+table th{
+    border-bottom: 2px solid black;
+    padding: 16px;
+    font: bold 24px var(--fontePadrao);
+}
+
+table td{
+    padding: 16px 0px;
+    text-align: center;
+    font: normal 18px var(--fontePadrao);
+    border-bottom: 1px solid var(--underLinecolor);
+}
+
+table td img{
+    height: 30px ;
+}
+
+.resultado{
+    padding: 8px;
+    font-weight: bold;
+    color: var(--textBotao);
+    background-color: black;
+    border-radius: 3px;
+}
+
+.aprovado{
+    background-color: var(--corBotao);
+}
+
+.reprovado{
+    background-color: red;
+}
